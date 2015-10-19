@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.casky.sLD8_smart_rc_server"
+    android:sharedUserId="android.uid.system"
+    android:versionCode="2"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service android:permission="android.permission.INTERNET" android:name="com.casky.sLD8_smart_rc_server.Smart_RC_Server" android:process=":remote">
+            <intent-filter>
+                
+            </intent-filter>
+        </service>
+        <service android:name=".Android_Tv_Register" android:process=":remote">
+        	<intent-filter>
+
+        	</intent-filter>
+        </service>  
+        <service android:name=".Virtual_Mouse_Server" android:process=":remote">
+        	<intent-filter>
+
+        	</intent-filter>
+        </service>
+        <receiver android:name="com.casky.sLD8_smart_rc_server.Smart_RC_Auto_Start_Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                 
+            </intent-filter>
+        </receiver>
+        <activity android:permission="android.permission.INTERNET" android:name="com.casky.sLD8_smart_rc_server.Smart_RC_Server_Test_Panel">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+				
+            </intent-filter>
+        </activity>
+        
+        </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/RC_background"
+	android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:orientation="vertical">
+	
+	    <TextView 
+	        android:id="@+id/rc_frag_voice_tv_content"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_marginTop="80dp"
+			android:textSize="20sp"
+			android:layout_gravity="center_horizontal"
+			android:visibility="invisible"
+			android:text="" />
+	    
+	    <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:visibility="invisible"
+	        android:layout_weight="0.2"/>
+	
+		<ImageView 
+		    android:id="@+id/rc_frag_voice_iv_voice_volume"
+		    android:layout_width="265dp"
+		    android:layout_height="250dp"
+		    android:visibility="invisible"
+		    android:layout_gravity="center_horizontal"
+		    android:src="@drawable/rc_vc_speake_volume_0"/>
+		
+		<View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:visibility="invisible"
+	        android:layout_weight="0.2"/>
+	    	
+	    <Button
+	        android:id="@+id/rc_frag_voice_btn_press_speak"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="@drawable/rc_vc_shape_stroke"
+	        android:layout_gravity="center_horizontal|bottom"
+	        android:layout_marginBottom="3dp"
+	        android:text="@string/speech_press_to_speak"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+	
+	</LinearLayout>
+
+	<LinearLayout 
+	    android:id="@+id/rc_frag_voice_ll_speech_help"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/rc_vc_shape_stroke"
+	    android:layout_gravity="top|center_horizontal"
+	    android:visibility="invisible" >
+
+		<LinearLayout
+		    android:id="@+id/rc_frag_voice_ll_pager_container"
+		    android:layout_gravity="center_horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+			
+			<android.support.v4.view.ViewPager
+		        android:id="@+id/rc_frag_voice_vp_voicePager"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		         />
+	
+	    </LinearLayout>
+	    
+		<LinearLayout
+	        android:id="@+id/rc_frag_voice_recommend_circle_images"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:orientation="horizontal" >
+		</LinearLayout>
+	
+	</LinearLayout>
+</RelativeLayout>

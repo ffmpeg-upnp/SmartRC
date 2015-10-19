@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+    <ImageView 
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:id="@+id/video_item_iv_thumbnail"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/cont"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="79dp"
+	    android:layout_toRightOf="@id/video_item_iv_thumbnail"
+	    android:layout_marginLeft="10dp"
+	    android:id="@+id/video_item_rl_info">
+
+        <TextView
+            android:id="@+id/video_item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:lines="2"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dlna_item_title_text_size" />
+        
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/video_item_tv_time"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:layout_below="@id/video_item_tv_title"
+		    android:text="@string/time"
+		    android:textSize="@dimen/dlna_item_time_text_size" />
+		
+		<CheckBox
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/video_item_cb_select"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="10dp"
+	        android:layout_centerInParent="true"
+			android:clickable="false"
+			style="@style/MyCheckBox"/>
+    </RelativeLayout>
+   	    
+</RelativeLayout>

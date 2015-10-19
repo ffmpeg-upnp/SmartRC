@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">3dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+
+    <!-- space between DNLA pictures. -->
+    <dimen name="picture_item_space">2dp</dimen>
+
+    <dimen name="dlna_item_title_text_size">15sp</dimen>
+    <dimen name="dlna_item_time_text_size">10sp</dimen>
+</resources>

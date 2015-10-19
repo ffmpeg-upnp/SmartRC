@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >  
+    
+    <ImageView
+        android:background="@color/black"
+        android:id="@+id/pic_gallery_iv_img_content"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:scaleType="fitCenter">
+    </ImageView>
+
+    <TextView
+        android:background="@color/black"
+        android:id="@+id/pic_gallery_tv_empty_hint"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/dlna_pic_glr_empty"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/pic_gallery_iv_img_content"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/pic_gallery_rl_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:background="@color/transparent_black"
+        android:layout_height="50dp">
+        
+        <Button
+			android:id="@+id/pic_gallery_btn_back"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:background="@drawable/dlna_back_btn_backgroud"
+			android:visibility="visible"/>
+        
+        <TextView 
+           	android:id="@+id/pic_gallery_tv_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textSize="25sp"
+	        />
+        
+    </RelativeLayout>
+
+
+    
+    <Gallery
+        android:id="@+id/pic_gallery_glr_item_list"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:spacing="1dp"
+	    android:layout_above="@+id/pic_gallery_rl_dlna_menu"/>
+ 
+        
+	<RelativeLayout 
+	    android:id="@+id/pic_gallery_rl_dlna_menu"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/transparent_black">
+	    
+	    <Button 
+	        android:id="@+id/pic_gallery_btn_menu_push"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="40dp"
+	        android:background="@drawable/dlna_multi_menu_push"/>
+	    
+	    <Button 
+	        android:id="@+id/pic_gallery_btn_menu_delete"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/dlna_multi_menu_del"/>
+	    
+	    <Button 
+	        android:id="@+id/pic_gallery_btn_menu_share"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_marginRight="40dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/dlna_multi_menu_share"/>
+	    
+	</RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pic_detail_rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+   	<RelativeLayout
+   	    android:id="@+id/pic_sub_rl_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" 
+        android:background="#32CD32">
+
+        <Button
+            android:id="@+id/pic_sub_btn_select_all"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dlna_muti_select"
+            android:text="@string/dlna_title_bar_select_all"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+        
+       	<Button
+            android:id="@+id/pic_sub_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dlna_back_btn_backgroud"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/pic_sub_tv_select_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+	        android:ellipsize="marquee"
+	        android:focusable="true"
+	        android:marqueeRepeatLimit="marquee_forever"
+	        android:focusableInTouchMode="true"
+            android:textSize="25sp" />
+        
+
+
+        <Button
+            android:id="@+id/pic_sub_btn_multi_select"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dlna_muti_select"
+            android:text="@string/dlna_title_bar_multiple_select"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    
+    <GridView 
+        android:id="@+id/pic_detail_gv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pic_sub_rl_titlebar"
+        android:background="@color/white"
+        android:numColumns="4"
+        android:horizontalSpacing="@dimen/picture_item_space"
+        android:verticalSpacing="@dimen/picture_item_space"
+        android:stretchMode="columnWidth"/>
+
+    <RelativeLayout 
+	    android:id="@+id/pic_sub_rl_dlna_menu"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/transparent_black"
+	    android:visibility="gone">
+	    
+	    <Button 
+	        android:id="@+id/pic_sub_btn_menu_push"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="40dp"
+	        android:background="@drawable/dlna_multi_menu_push"/>
+	    
+	    <Button 
+	        android:id="@+id/pic_sub_btn_menu_delete"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/dlna_multi_menu_del"/>
+	    
+	    <Button 
+	        android:id="@+id/pic_sub_btn_menu_share"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_marginRight="40dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/dlna_multi_menu_share"/>
+	    
+	</RelativeLayout>
+	
+</RelativeLayout>

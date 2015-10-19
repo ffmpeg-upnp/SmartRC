@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/dlna_main_rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:layout_alignParentTop="true"
+        android:background="@color/dlna_titlebar">
+
+        <ImageView
+            android:id="@+id/dlna_main_iv_imageMainMenu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/dlna_main_menu" />
+
+        <Button
+            android:id="@+id/dlna_main_btn_TitleText"
+            style="@style/TitleBarText"
+            android:text="@string/dlna_title_bar_my_phone"
+             />
+
+        <Button
+            android:id="@+id/dlna_main_btn_playing"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/dlna_music_title_playing"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/main_btn_start_mltslc"/>
+        
+        <Button
+            android:id="@+id/main_btn_start_mltslc"
+           	style="@style/TitleBarButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/dlna_title_bar_multiple_select" />
+
+    </RelativeLayout>
+    	
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@android:id/tabhost"
+        android:layout_below="@+id/dlna_main_rl_title"/>
+
+
+	<com.casky.dlna.main.NDFragmentTabHost
+	    android:id="@android:id/tabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/dlna_tabbar_background">
+
+		<FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0" />
+	</com.casky.dlna.main.NDFragmentTabHost>
+	
+	<RelativeLayout 
+	    android:id="@+id/main_rl_dlna_menu"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/transparent_black"
+	    android:visibility="gone">
+	    
+	    <Button 
+	        android:id="@+id/menu_push_button"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="40dp"
+	        android:background="@drawable/dlna_multi_menu_push"/>
+	    
+	    <Button 
+	        android:id="@+id/menu_delete_button"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_centerInParent="true"
+	        android:background="@drawable/dlna_multi_menu_del"/>
+	    
+	    <Button 
+	        android:id="@+id/menu_share_button"
+	        style="@style/Dlna_Multi_menu_btn"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="40dp"
+	        android:background="@drawable/dlna_multi_menu_share"/>
+	    
+	</RelativeLayout>
+	
+</RelativeLayout>

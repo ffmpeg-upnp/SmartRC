@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:wiperswitch="http://schemas.android.com/apk/res/com.casky.smartremote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/setting_list_itm_tv_vb"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/setting_list_itm_iv_vb"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/setting_list_itm_iv_vb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/setting_list_itm_tv_vb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"/>
+
+    <com.casky.remote.setting.WiperSwitch
+        android:id="@+id/setting_list_itm_ws_wiperS"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:focusable="true"
+        wiperswitch:wiperofsy="15" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar voice;
+!slot <manage>;
+!slot <name>;
+!start <commands>;
+<commands>:[<manage>]<name>;
+<manage>:打开|删除;
+<name>:日历|联系人;

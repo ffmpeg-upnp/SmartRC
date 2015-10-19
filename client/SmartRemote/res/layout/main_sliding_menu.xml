@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#282D37">
+    <ImageView
+        android:id="@+id/sliding_menu_lv_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/main_menu_phone_tv" />
+
+    <ListView
+        android:id="@+id/sliding_menu_lv_left_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sliding_menu_lv_phone_tv"
+        android:background="#282D37"
+        android:choiceMode="singleChoice"
+        android:divider="@color/dimgray"
+        android:dividerHeight="1dp" />
+
+</RelativeLayout>

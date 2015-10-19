@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" 
+    android:clickable="true">
+
+	<SurfaceView
+	    android:id="@+id/video_mediaplayer_sv_surface_view" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    > 
+	</SurfaceView> 
+	
+	<RelativeLayout 
+	    android:id="@+id/video_mediaplayer_rl_titlebar"
+	    android:layout_width="fill_parent"
+	    android:layout_alignParentTop="true"
+	    android:layout_height="50dp"
+	    android:clickable="true"
+	    android:background="@color/transparent_black">
+	    
+		<Button
+	        android:id="@+id/video_mediaplayer_btn_back" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:background="@drawable/dlna_back_btn_backgroud"/>
+		
+		<TextView
+	        android:id="@+id/video_mediaplayer_tv_name"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:maxWidth="250dp"
+	    	android:maxLines="1"
+	    	android:textColor="@color/white"
+	    	android:textSize="20sp"
+            android:layout_toRightOf="@+id/video_mediaplayer_btn_back"
+            android:layout_toLeftOf="@+id/video_mediaplayer_btn_push"
+			android:layout_centerInParent="true" 
+			android:scrollHorizontally = "true"	
+			/>
+		
+	    <Button 
+	        android:id="@+id/video_mediaplayer_btn_push"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	    	android:background="@drawable/dlna_multi_menu_push"
+			android:layout_marginRight="15dp"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        />
+	</RelativeLayout>    
+	
+	<RelativeLayout 
+	    android:id="@+id/video_mediaplayer_rl_controlbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:background="@color/transparent_black"
+	    android:layout_alignParentBottom="true">
+	    
+	    <LinearLayout 
+		    android:id="@+id/video_mediaplayer_rl_control_buttons"
+		    android:layout_width="250dp"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="10dp"
+		    android:layout_alignParentBottom="true"
+		    >
+			
+	        <Button
+			    android:id="@+id/video_mediaplayer_btn_fr"
+			    style="@style/Dlna_mediaplayer_controlbar"
+			    android:background="@drawable/dlna_media_fr_normal" />
+	        
+			<Button
+			    android:id="@+id/video_mediaplayer_btn_pause"
+			    style="@style/Dlna_mediaplayer_controlbar"
+			    android:layout_marginLeft="50dp"
+			    android:layout_marginRight="50dp"
+			    android:background="@drawable/dlna_media_pause_normal" />
+			
+			<Button
+			    android:id="@+id/video_mediaplayer_btn_ff"
+			    style="@style/Dlna_mediaplayer_controlbar"
+			    android:background="@drawable/dlna_media_ff_normal" />		
+			    
+		</LinearLayout>
+		
+
+		
+	    <RelativeLayout 
+		    android:id="@+id/video_mediaplayer_rl_control_duration"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+	    
+		    <TextView 
+				android:id="@+id/video_mediaplayer_tv_curtime"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"     
+				android:layout_below="@+id/video_mediaplayer_sb_progressbar"
+				android:textColor="@color/white"
+				android:gravity="center"
+				android:layout_marginLeft="5dp"
+				/>
+		    
+			<SeekBar
+				android:id="@+id/video_mediaplayer_sb_progressbar"
+				android:layout_width="match_parent"
+				android:layout_height="10dp"
+				android:layout_alignParentTop="true"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:thumb="@drawable/dlna_seekbar_shape"
+				style="?android:attr/progressBarStyleHorizontal">      
+			</SeekBar>
+			
+			<TextView 
+				android:id="@+id/video_mediaplayer_tv_totaltime"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_below="@+id/video_mediaplayer_sb_progressbar"
+				android:textColor="@color/white"
+				android:gravity="center"
+				android:layout_marginRight="5dp"
+				/>
+				    
+		</RelativeLayout>
+		
+	    <Button
+	        android:id="@+id/video_mediaplayer_btn_playList"
+	        android:layout_width="60dp"
+			android:layout_height="40dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:layout_marginRight="5dp"
+			android:layout_marginBottom="10dp"
+	        android:background="@drawable/dlna_media_playlist_normal" />
+
+	</RelativeLayout>  
+	
+	<ListView
+        android:id="@+id/video_play_lv_playList"
+        android:background="@color/transparent_black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/video_mediaplayer_rl_titlebar"
+        android:layout_above="@+id/video_mediaplayer_rl_controlbar"
+        android:visibility="gone"/>
+
+</RelativeLayout >

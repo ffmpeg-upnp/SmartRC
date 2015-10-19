@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/setting_rl_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:background="@color/RC_background">
+		<Button
+            android:id="@+id/setting_tb_btn_MainMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/rc_show_main_menu"/>
+	
+	    <TextView
+	        android:id="@+id/setting_tb_tv_txt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:background="@color/transparent"
+	        android:text="@string/action_settings"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+	    
+	</RelativeLayout>
+
+    <ListView
+        android:id="@+id/setting_lv_List"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below ="@+id/setting_rl_titlebar"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/setting_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/softwareinfo"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

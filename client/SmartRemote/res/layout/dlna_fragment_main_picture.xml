@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pic_detail_rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/pic_detail_rl_titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:layout_alignParentTop="true"
+        android:background="@color/dlna_titlebar"
+        android:visibility="gone">
+        
+        <Button
+            android:id="@+id/pic_detail_btn_SelectAll"
+            style="@style/TitleBarButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/dlna_title_bar_select_all"
+		/>
+
+        <TextView
+            android:id="@+id/pic_detail_tv_TitleText"
+			style="@style/TitleBarText" />
+
+        <Button
+            android:id="@+id/pic_detail_btn_cancel_mltslc"
+           	style="@style/TitleBarButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/dlna_title_bar_cancel" />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/pic_detail_rl_album"
+        android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@drawable/dlna_pic_shape_selector"
+	    android:layout_below="@+id/pic_detail_rl_titleBar">
+    
+	    <TextView 
+	        android:id="@+id/pic_detail_tv_album"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+
+	    	android:layout_marginLeft="50dp"
+	    	android:layout_marginRight="10dp"
+	        android:textSize="25sp"
+	        android:textColor="@color/black"
+	        android:text="@string/dlna_frag_pic_btn_album"/>
+	    
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="20dp"
+	        android:src="@drawable/dlna_pic_arrow_right"
+	        android:layout_centerVertical="true"/>
+    
+    </RelativeLayout>
+    
+    <GridView 
+        android:id="@+id/pic_detail_gv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pic_detail_rl_album"
+        android:numColumns="4"
+        android:horizontalSpacing="@dimen/picture_item_space"
+        android:verticalSpacing="@dimen/picture_item_space"
+        android:stretchMode="columnWidth"/>
+
+</RelativeLayout>

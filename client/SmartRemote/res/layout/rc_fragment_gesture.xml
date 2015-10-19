@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc_frag_gesture_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RC_background" >
+    
+    <ImageView
+	     android:id="@+id/rc_frag_gesture_iv_bg"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"	     
+	     android:src="@drawable/rc_gesture_hint"
+	     android:layout_marginLeft="5sp"
+	     android:layout_marginRight="5sp"
+	     android:layout_marginTop="5sp"
+	     android:layout_marginBottom="5sp"
+	/>
+    
+	<ImageView
+	     android:id="@+id/rc_frag_gesture_iv_ok"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"	     
+	     android:background="@drawable/rc_gesture_psok1"
+	     android:visibility="invisible"     
+	/>
+	
+	<ImageView
+	     android:id="@+id/rc_frag_gesture_iv_rightarrow"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"	     
+	     android:background="@drawable/rc_gesture_psright"
+	     android:visibility="invisible"     
+	/>
+	
+	<ImageView
+	     android:id="@+id/rc_frag_gesture_iv_leftarrow"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"	     
+	     android:background="@drawable/rc_gesture_psleft"
+	     android:visibility="invisible"     
+	/>
+	
+	<ImageView
+	     android:id="@+id/rc_frag_gesture_iv_uparrow"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"	     
+	     android:background="@drawable/rc_gesture_psup"
+	     android:visibility="invisible"     
+	/>
+	
+	<ImageView
+	     android:id="@+id/rc_frag_gesture_iv_downarrow"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"	     
+	     android:background="@drawable/rc_gesture_psdown"
+	     android:visibility="invisible"     
+	/>
+	
+	<ImageView
+	     android:id="@+id/rc_frag_gesture_iv_return"
+	     android:contentDescription="@string/exit"
+	     android:layout_centerInParent="true"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"	     
+	     android:background="@drawable/rc_gesture_psreturn"
+	     android:visibility="invisible"     
+	/>
+	
+    <android.gesture.GestureOverlayView
+        android:id="@+id/rc_frag_gesture_gov_gesture_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:gestureStrokeType="multiple"
+        android:gestureColor="@color/white" 
+        android:background="@color/transparent"
+        />
+    
+</RelativeLayout>

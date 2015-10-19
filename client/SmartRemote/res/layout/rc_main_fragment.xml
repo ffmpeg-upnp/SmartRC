@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/rc_main_frag_rl_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:background="@color/RC_background">
+		<Button
+            android:id="@+id/rc_main_frag_titlebar_btn_mainmenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/rc_show_main_menu"/>
+
+	    <ProgressBar
+	        android:id="@+id/rc_main_frag_titlebar_pb_progress_search"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        style="@android:style/Widget.ProgressBar.Small"
+	        android:visibility="gone" />
+	
+	    <Button
+	        android:id="@+id/rc_main_frag_titlebar_btn_connect"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:background="@color/transparent"
+	        android:text="@string/disconnect"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+	    
+	    <ImageView
+            android:id="@+id/rc_main_frag_titlebar_iv_speech_help"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/rc_vc_speech_help_normal"
+            android:visibility="invisible" />
+	</RelativeLayout>
+    
+	<FrameLayout 
+	    android:id="@+id/rc_main_frag_fl_realtabcontent"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dip"
+	    android:layout_weight="1">
+	</FrameLayout>
+	
+	<android.support.v4.app.FragmentTabHost
+	    android:id="@android:id/tabhost"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/rc_main_tab_background">
+	    <TabHost 
+	        android:id="@android:id/tabs"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	    </TabHost>
+		<FrameLayout 
+		    android:id="@android:id/tabcontent"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		</FrameLayout>	    
+	</android.support.v4.app.FragmentTabHost>
+</LinearLayout>

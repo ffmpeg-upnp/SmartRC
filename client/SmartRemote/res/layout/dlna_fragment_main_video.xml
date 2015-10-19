@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_frag_rl_videoFrag"
+    android:tag="VideoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/video_frag_rl_titleBar"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:background="@color/dlna_titlebar"
+        android:visibility="gone">
+        
+        <Button
+            android:id="@+id/video_frag_btn_SelectAll"
+            style="@style/TitleBarButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/dlna_title_bar_select_all"
+		/>
+
+        <TextView
+            android:id="@+id/video_frag_tv_TitleText"
+			style="@style/TitleBarText"/>
+
+        <Button
+            android:id="@+id/video_frag_btn_cancel_mltslc"
+           	style="@style/TitleBarButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/dlna_title_bar_cancel" />
+    </RelativeLayout>
+    
+	<ListView
+	    android:id="@+id/video_frag_lv_videoList"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/video_frag_rl_titleBar"
+		/>
+    
+</RelativeLayout>

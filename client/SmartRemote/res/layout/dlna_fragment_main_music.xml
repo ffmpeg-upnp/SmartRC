@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/musicview">
+    
+    <RelativeLayout
+        android:id="@+id/music_frag_rl_titleBar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"
+        android:orientation="horizontal" 
+        android:background="@color/dlna_titlebar"
+        android:visibility="visible">
+        
+        <Button
+            android:id="@+id/music_frag_btn_SelectAll"
+            style="@style/TitleBarButton"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/dlna_title_bar_select_all"
+		/>
+
+        <TextView
+            android:id="@+id/music_frag_tv_TitleText"
+			style="@style/TitleBarText"/>
+
+        <Button
+            android:id="@+id/music_frag_btn_cancel_mltslc"
+           	style="@style/TitleBarButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/dlna_title_bar_cancel" />
+    </RelativeLayout>
+
+	 <ListView
+        android:id="@+id/music_frag_lv_files_listview"
+        android:layout_below="@+id/music_frag_rl_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>

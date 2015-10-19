@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <declare-styleable name="WiperSwitch">  
+    <attr name="txtofsx" format="integer" />  
+    <attr name="txtofsy" format="integer" /> 
+    <attr name="txtsize" format="integer" />
+    <attr name="wiperofsx" format="integer" />  
+    <attr name="wiperofsy" format="integer" />     
+</declare-styleable>
+<declare-styleable name="FancyCoverFlow">
+    <attr name="unselectedAlpha" format="float"/>
+    <attr name="unselectedSaturation" format="float"/>
+    <attr name="unselectedScale" format="float"/>
+    <attr name="maxRotation" format="integer"/>
+    <attr name="scaleDownGravity" format="float"/>
+    <attr name="actionDistance" format="integer">
+        <enum name="auto" value="2147483647" />
+    </attr>
+</declare-styleable>
+</resources>

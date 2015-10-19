@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rc_frag_mouse_rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RC_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/rc_frag_mouse_et_inputmethod"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10sp"
+        android:hint="@string/inputmethodhint"
+        android:textColor="@color/slategrey"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/rc_frag_mouse_btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rc_frag_mouse_btn_send"
+        android:background="@drawable/rc_im_delete_backgroud"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/rc_frag_mouse_btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rc_frag_mouse_btn_send"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rc_im_enter_backgroud"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/rc_frag_mouse_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rc_mouse_back"
+        android:onClick="onButtonClicked"
+        android:tag="@string/TREQ_RC_KEY_Back" />
+
+    <com.casky.remote.widget.DashedLine
+        android:id="@+id/rc_frag_mouse_dl_dashedLine"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/rc_frag_mouse_btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rc_frag_mouse_et_inputmethod"
+        android:background="@drawable/rc_im_send_backgroud"
+        android:visibility="invisible" />
+
+</RelativeLayout>

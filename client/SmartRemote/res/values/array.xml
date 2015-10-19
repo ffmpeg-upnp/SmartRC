@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >遥控器</item>
+        <item >媒体分享</item>
+        <item >TV管理</item>
+        <item >设置</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/main_menu_item_rc</item>
+        <item>@drawable/main_menu_item_dlna</item>
+        <item>@drawable/main_menu_item_managetv</item>
+        <item>@drawable/main_menu_item_setting</item>
+    </array>
+</resources>

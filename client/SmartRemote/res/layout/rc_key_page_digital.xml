@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<TableLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true" 
+		android:layout_centerVertical="true" >
+	
+	    <TableRow
+	        android:id="@+id/rc_key_digital_tr_table_row_1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	       
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_one"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_1"
+	            android:text="@string/buttonOne"/>
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_two"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_2"
+	            android:text="@string/buttonTwo" />
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_three"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_3"
+	            android:text="@string/buttonThree" />
+	    </TableRow>
+	
+	    <TableRow
+	        android:id="@+id/rc_key_digital_table_row2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_four"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_4"
+	            android:text="@string/buttonFour" />
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_five"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_5"
+	            android:text="@string/buttonFive" />
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_six"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_6"
+	            android:text="@string/buttonSix" />
+	    </TableRow>
+	
+	    <TableRow
+	        android:id="@+id/rc_key_digital_table_row3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_seven"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_7"
+	            android:text="@string/buttonSeven" />
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_eight"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_8"
+	            android:text="@string/buttonEight" />
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_nine"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_9"
+	            android:text="@string/buttonNine" />
+	    </TableRow>
+	
+	    <TableRow
+	        android:id="@+id/rc_key_digital_table_row4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_zero"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:background="@drawable/rc_key_common"
+	            android:textColor="@color/white" 
+	            android:textSize="30sp"
+	            android:layout_margin="10dp"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_0"
+	            android:text="@string/buttonZero" />
+
+	        <Button
+	            android:id="@+id/rc_key_digital_btn_ok"
+	            android:layout_width="80dp"
+	            android:layout_height="80dp"
+	            android:layout_margin="10dp"
+	            android:background="@drawable/rc_key_common"
+	            android:onClick="onButtonClicked"
+	            android:tag="@string/TREQ_RC_KEY_OK"
+	            android:text="@string/ok"
+	            android:textColor="@color/white"
+	            android:textSize="25sp" />
+
+	    </TableRow>
+	</TableLayout>
+
+</RelativeLayout>

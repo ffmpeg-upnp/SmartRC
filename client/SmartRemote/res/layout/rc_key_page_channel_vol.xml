@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_frequent_key_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rc_key_channel_rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+	    <Button 
+	        android:id="@+id/rc_key_channel_btn_powerOff"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentRight="true" 
+	        android:layout_alignParentTop="true" 
+	        android:layout_marginRight="20dp" 
+	        android:background="@drawable/rc_key_power" 
+	        android:onClick="onButtonClicked" 
+	        android:tag="@string/TREQ_RC_KEY_PowerOFF" />
+
+	    <Button 
+	        android:id="@+id/rc_key_channel_btn_mute"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentLeft="true" 
+	        android:layout_marginLeft="20dp" 
+	        android:background="@drawable/rc_key_mute" 
+	        android:onClick="onButtonClicked" 
+	        android:tag="@string/TREQ_RC_KEY_Mute" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc_key_channel_rl_channel_vol"
+        android:layout_width="fill_parent"
+        android:layout_height="277dp" >
+
+        <LinearLayout
+            android:id="@+id/rc_key_channel_btn_vol_area"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="90dp"
+            android:background="@drawable/rc_key_chanvol_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/rc_key_channel_btn_vol_up"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rc_key_ch_vol_up"
+                android:onClick="onButtonClicked"
+                android:tag="@string/TREQ_RC_KEY_VolumeUp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/rc_key_channel_btn_vol"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textSize="20sp"
+                android:text="@string/volume"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/rc_key_channel_btn_vol_down"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rc_key_ch_vol_down"
+                android:onClick="onButtonClicked"
+                android:tag="@string/TREQ_RC_KEY_VolumeDown"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rc_key_channel_ll_ch_area"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/rc_key_chanvol_bg"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/rc_key_channel_btn_channel_up"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rc_key_ch_vol_up"
+                android:onClick="onButtonClicked"
+                android:tag="@string/TREQ_RC_KEY_ChannelUp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/rc_key_channel_btn_ch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textSize="20sp"
+                android:text="@string/channel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/rc_key_channel_btn_channel_down"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rc_key_ch_vol_down"
+                android:onClick="onButtonClicked"
+                android:tag="@string/TREQ_RC_KEY_ChannelDown"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rc_key_channel_rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp" >
+
+        <Button
+            android:id="@+id/rc_key_channel_btn_info"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rc_key_common"
+            android:onClick="onButtonClicked" 
+            android:tag="@string/TREQ_RC_KEY_Info"
+            android:textSize="20sp"
+            android:text="@string/info"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/rc_key_channel_btn_tv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rc_key_common"
+            android:onClick="onButtonClicked"
+            android:tag="@string/TREQ_RC_KEY_TV"
+            android:textSize="20sp"
+            android:text="@string/TV"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/rc_key_channel_btn_source"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rc_key_common"
+            android:onClick="onButtonClicked" 
+            android:tag="@string/TREQ_RC_KEY_Source"
+            android:textSize="20sp"
+            android:text="@string/source"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

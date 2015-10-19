@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources name="RcKey" >
+    
+	<string name="SPEECH_WORD_Up">上</string>
+	<string name="SPEECH_WORD_Down">下</string>
+	<string name="SPEECH_WORD_Left">左</string>
+	<string name="SPEECH_WORD_Right">右</string>
+	<string name="SPEECH_WORD_0">零</string>
+	<string name="SPEECH_WORD_1">一</string>
+	<string name="SPEECH_WORD_2">二</string>
+	<string name="SPEECH_WORD_3">三</string>
+	<string name="SPEECH_WORD_4">四</string>
+	<string name="SPEECH_WORD_5">五</string>
+	<string name="SPEECH_WORD_6">六</string>
+	<string name="SPEECH_WORD_7">七</string>
+	<string name="SPEECH_WORD_8">八</string>
+	<string name="SPEECH_WORD_9">九</string>
+	<string name="SPEECH_WORD_Mute">静音</string>
+	<string name="SPEECH_WORD_PowerOFF">关机</string>
+	<string name="SPEECH_WORD_PowerOn">开机</string>
+	<string name="SPEECH_WORD_ChannelUp">频道加</string>
+	<string name="SPEECH_WORD_ChannelDown">频道减</string>
+	<string name="SPEECH_WORD_VolumeUp">音量加</string>
+	<string name="SPEECH_WORD_VolumeDown">音量减</string>
+	<string name="SPEECH_WORD_SmartTV_MainPage">主页</string>
+	<string name="SPEECH_WORD_SmartTV_Android">安卓</string>
+	<string name="SPEECH_WORD_OK_Enter">确定</string>
+	<string name="SPEECH_WORD_OK_Ok">ok</string>
+	<string name="SPEECH_WORD_Back">返回</string>
+	<string name="SPEECH_WORD_Home">菜单</string>	
+	<string name="SPEECH_WORD_Info">信息</string>
+	<string name="SPEECH_WORD_TV">TV</string>
+	<string name="SPEECH_WORD_Source_Input">输入</string>
+	<string name="SPEECH_WORD_Source_InputSource">输入源</string>
+	<string name="SPEECH_WORD_Source_SignalSource">信号源</string>
+    <string name="SPEECH_WORD_MAX">60</string>
+    
+    <string name="SPEECH_WORD_Directions">上下左右</string>
+    <string name="SPEECH_WORD_Numbers">零一二三四五六七八九</string>
+
+    <string name="SPEECH_CHECK_TV_Connection">请检查与电视连接</string>
+    <string name="SPEECH_CHECK_WIFI_Connection">请检查无线网络连接</string>
+    
+    <string name="SPEECH_WORD_Help_Page_1">
+        	方向：上|下|左|右 \n 
+			数字：0~9 最大支持三位数\n
+			静音：静音\n
+			关机：关机\n
+			确定：确定|OK
+			</string>
+	<string name="SPEECH_WORD_Help_Page_2">
+	    	进入主页：主页|安卓\n
+			返回：返回\n
+			菜单：菜单\n
+			节目信息：信息
+			</string>
+	<string name="SPEECH_WORD_Help_Page_3">
+	    	音量控制：音量加|音量减\n
+			频道控制：频道加|频道减\n
+			切换到TV：TV\n
+			切换信号源：输入|输入源|信号源
+			</string>
+</resources>
